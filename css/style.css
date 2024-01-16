@@ -59,4 +59,22 @@ nav a:hover {
 .navbar-right {
     float: right;
 }
-/* ------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------*/        
+
+.main-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #333;
+}
+
+.section-content {
+    line-height: 1.6;
+    color: #555;
+}
+
