@@ -60,6 +60,71 @@ nav a:hover {
 .navbar-right {
     float: right;
 }
+
+.products_title{
+    text-align: center;
+}
+
+.products h3{
+    margin: 0;
+}
+
+.products {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: solid 3px #45A29E;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+}
+
+.test{
+    text-align: center;
+    border: solid 3px #45A29E;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cards{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topcards {
+    width : 20vw;
+    height: 10vh;
+    border-bottom: solid 3px #45A29E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pictures {
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width : 20vw;
+    height: 20vh;
+    padding-bottom: 180px;
+    border-bottom: solid 3px #45A29E;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.bottomcards{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    max-width : 20vw;
+    max-height: 30vh;
+}
+
 /* ------------------------------------------------------------------------------------*/
 .main-section {
     max-width: 800px;
