@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 nav {
@@ -25,4 +26,45 @@ nav a:hover {
 
 .navbar-right {
     float: right;
+}
+
+#connexionBackground {
+    position : absolute;
+    z-index: -1;
+}
+
+
+#connexionBackground img{
+    width: 100vw;
+    height: auto; 
+    filter: blur(3px)
+}
+
+.container {
+    background-image: blue;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.centerFlexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connexionForm {
+    border : solid 3px darkslategrey;
+    border-radius: 10px;
+    width: 20vw;
+    height: 50vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 1) 10px 10px 20px;
+}
+
+.inputConnexion {
+    flex-direction: column;
+    align-items: start;
 }
