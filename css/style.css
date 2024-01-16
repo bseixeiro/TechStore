@@ -1,33 +1,65 @@
+
+/* ---------------------------------------Navbar---------------------------------------*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif, sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
 nav {
-    background-color: #333;
+    background-color: #0B0C10;
     overflow: hidden;
+    height: 90px;
 }
 
 nav a {
     float: left;
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 14px 16px;
+    padding: 40px 32px;
     text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color: rgb(102, 252, 241);
     color: black;
+}
+
+.search-container {
+    float: left;
+    padding: 25px;
+    display: flex;
+}
+
+.search-container input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.search-container button {
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+}
+.search-input {
+    width: 400px;
+    border-radius: 10px;
 }
 
 .navbar-right {
     float: right;
 }
-
 #connexionBackground {
     position : absolute;
     z-index: -1;
