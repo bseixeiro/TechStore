@@ -37,7 +37,6 @@ $ git commit -m "readme.md updated"
 $ git push -u origin develop
 ```
 
-ON A UN PROBLEME DE BRANCHE J ESSAYE DE CORRIGER CA APRES JE TE REVIENS VERS TOI
-
+Petit problème lors de ce push, un merge de la branche de dev a été fait sur la main. On a donc du resynchroniser les deux branches avant de continuer.
 
 
