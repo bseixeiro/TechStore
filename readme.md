@@ -107,8 +107,39 @@ De plus nous avons essayer de ne pas déployer toutes les fonctionnalités simul
 
 Et enfin une communication transparente permet à chacun de comprendre ce qui a été modifié et de signaler rapidement s'il y a un problème. 
 
+#### Phase 4: Préparation de la Release
 
+**Questions :**
 
+- Quels types de tests avez-vous effectués avant la mise en production ?
+- Avez-vous rencontré des problèmes pendant cette phase et comment les avez-vous résolus ?
+
+#### Phase 5: Mise en Production et Maintenance
+
+**Tâches :**
+
+1. Mergez la branche `release` dans `main` et `develop`.
+2. En cas de bugs, créez et gérez des branches `hotfix`.
+
+**Questions :**
+
+- Comment gérez-vous les retours et les bugs après la mise en production ?
+- Quelles stratégies adoptez-vous pour la maintenance continue du site ?
+
+#### Phase 6: Rétrospective et Documentation
+
+**Questions :**
+
+- Quels sont les principaux enseignements tirés de ce projet ?
+- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?
+
+#### Phase 7: Rétrospective et Documentation
+
+**Questions :**
+
+- Quelles sont les principales différences entre la première et la seconde version du site ?
+- Quels sont les principaux enseignements tirés de ce projet ?
+- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?
 
 #### Conventions de nos commit:
   Les commits jouent un rôle essentiel dans la gestion de versions de notre projet, en fournissant une traçabilité claire des changements effectués au fil du temps. Afin de maintenir une cohérence dans nos messages de commits, nous adoptons une convention standard pour les préfixes et le format global.
