@@ -28,7 +28,11 @@ nav a:hover {
 }
 
 .products_title{
+    background-color: white;
     text-align: center;
+    border: solid 3px #45A29E;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .products h3{
@@ -36,6 +40,7 @@ nav a:hover {
 }
 
 .products {
+    background: radial-gradient(#c5c6c7, #45A29E);
     margin-left: 15vw;
     margin-right: 15vw;
     padding-left: 1vw;
@@ -45,15 +50,20 @@ nav a:hover {
     margin-bottom: 5vh;
 }
 
-.test{
+.cards{
+    background-color: white;
     text-align: center;
     border: solid 3px #45A29E;
     display: flex;
     flex-direction: column;
-    
 }
 
-.cards{
+.cards:hover{
+   transition: 500ms;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card_lines{
     margin-top: 5vh;
     display: flex;
     flex-direction: row;
@@ -75,7 +85,7 @@ nav a:hover {
     margin-bottom: 1vh;
     width : 20vw;
     height: 20vh;
-    padding-bottom: 180px;
+    padding-bottom: 23vh;
     border-bottom: solid 3px #45A29E;
 }
 
