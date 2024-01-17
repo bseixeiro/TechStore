@@ -9,18 +9,24 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="products.html">Produits</a>
-        <div class="search-container">
-            <input class="search-input" type="text" placeholder="Rechercher...">
-            <button type="submit">Rechercher</button>
-        </div>
-        <div class="navbar-right">
-            <a href="connexion.html">Mon Compte</a>
-            <a href="informations_pratiques.html">Informations Pratiques</a>
-        </div>
-    </nav>
+    <header>
+        <nav>
+            <div class="navbar-left">
+                <a class="centerFlexBox" href="index.html">Accueil</a>
+                <a class="centerFlexBox" href="products.html">Produits</a>
+            </div>
+            <div class="navbar-center">
+                <div class="search-container centerFlexBox">
+                    <input class="search-input" type="text" placeholder="Rechercher un produit...">
+                    <button type="submit">Rechercher</button>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a class="centerFlexBox" href="connexion.html">Mon Compte</a>
+                <a class="centerFlexBox" href="informations_pratiques.html">Informations Pratiques</a>
+            </div>
+        </nav>    
+    </header>
 
     <div id="connexionBackground">
         <img src="../img/background.jpg" alt="">
@@ -43,6 +49,53 @@
                 <button>Vers le site</button>
             </div>
         </div>
+    </div>
+
+    <div class="piedpage"> 
+        <footer>
+            <div id="boite"> 
+                <div class="contact">
+                    <div class="Informations">A propos
+                        <p> 
+                            Qui somme nous ? 
+                            <br>Comparatif 
+                            <br>Acheter un appareil
+                            <br>Offre étudiante
+                            <br>On recrute
+                            <br>Blog
+                        </p>
+                    </div>
+        
+                    <div class="Informations">Besoin d'aide ?  
+                        <p>Paiement
+                            <br>Livraison
+                            <br>Aide et assistance
+        
+                        </p>
+                    </div>
+        
+        
+                    <div class="Informations">La loi et l'ordre 
+                        <p>Conditions générales d'utilisation
+                            <br>Protection des données 
+                            <br>Cookies
+                            <br>Mentions légales
+                            
+                        </p>
+                        <div class="link">
+                            <a href="https://www.instagram.com/"><img class="insta"
+                                src="../img/instagram.png" alt="Image logo Instagram"> </a> 
+                        <a href="https://twitter.com"><img class="twitter" src="../img/twitter.png"
+                                alt="Image logo Twitter"> </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div>
+                        <p>© TechStore - Crédits & mentions légales - données personnelles</p> <!--Texte pied de page-->
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
