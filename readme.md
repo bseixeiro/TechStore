@@ -82,11 +82,12 @@ $ git chekout -b Feature/Product
 
   On applique le même principe pour la branche release. 
 
-/* image */
+![Alt text](./img/releaseIssu.png)
 
   Pour la branche main on nomme le commit avec le nom de la version du projet.
 
-/* image */
+
+![Alt text](./img/mergeMain.png)
 
 #### Phase 3: Intégration et Tests
 
