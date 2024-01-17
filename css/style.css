@@ -33,6 +33,7 @@ nav a:hover {
     float: left;
     padding: 25px;
     display: flex;
+    width: 30vw;
 }
 
 .search-container input {
