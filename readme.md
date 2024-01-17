@@ -87,3 +87,31 @@ $ git chekout -b Feature/Product
   Pour la branche main on nomme le commit avec le nom de la version du projet.
 
 /* image */
+
+
+#### Conventions de nos commit:
+  Les commits jouent un rôle essentiel dans la gestion de versions de notre projet, en fournissant une traçabilité claire des changements effectués au fil du temps. Afin de maintenir une cohérence dans nos messages de commits, nous adoptons une convention standard pour les préfixes et le format global.
+  Préfixes:
+    FIX:
+      Les commits avec le préfixe fix sont utilisés pour corriger des bogues identifiés dans le code. Ces commits sont en corrélation avec les mises à jour de type PATCH dans la gestion sémantique de versions.
+
+    Exemple:
+      "fix: resolve issue with user authentication"
+
+
+    FEAT:
+      Les commits avec le préfixe feat introduisent de nouvelles fonctionnalités dans le code. Ils sont associés aux mises à jour de type MINOR dans la gestion sémantique de versions.
+
+    Exemple :
+    "feat: implement user profile editing feature"
+
+
+  Format:
+  Chaque message de commit suit le format suivant :
+
+  "<préfixe>: <description brève du changement effectué en Anglais>"
+  Exemples:
+    Pour l'ajout d'une nouvelle fonctionnalité :
+      "feat: implement search functionality"
+    Pour la correction d'un bugue :
+      "fix: resolve issue with date formatting"
