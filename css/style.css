@@ -1,26 +1,60 @@
+
+/* ---------------------------------------Navbar---------------------------------------*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, sans-serif, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 nav {
-    background-color: #333;
+    background-color: #0B0C10;
     overflow: hidden;
+    height: 90px;
 }
 
 nav a {
     float: left;
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 14px 16px;
+    padding: 40px 32px;
     text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color: rgb(102, 252, 241);
     color: black;
+}
+
+.search-container {
+    float: left;
+    padding: 25px;
+    display: flex;
+}
+
+.search-container input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+}
+
+.search-container button {
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+}
+.search-input {
+    width: 400px;
+    border-radius: 10px;
 }
 
 .navbar-right {
@@ -101,3 +135,105 @@ nav a:hover {
     max-height: 30vh;
 }
 
+/* ------------------------------------------------------------------------------------*/
+.main-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #333;
+}
+
+.section-content {
+    line-height: 1.6;
+    color: #555;
+}
+
+/*----------------Connexion Page---------------------*/
+#connexionBackground {
+    position : absolute;
+    z-index: -1;
+}
+
+
+#connexionBackground img{
+    width: 100vw;
+    height: auto; 
+    filter: blur(3px)
+}
+
+.container {
+    background-image: blue;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.centerFlexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.connexionForm {
+    padding: 15px;
+    border : solid 3px darkslategrey;
+    border-radius: 10px;
+    width: 300px;
+    height: 340px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 1) 10px 10px 20px;
+}
+
+.inputConnexion {
+    flex-direction: column;
+    align-items: start;
+}
+
+.underline {
+    border-bottom: solid 1px black;
+}
+
+.inputs{
+    height: 50%;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.inputs input {
+    width: 100%;
+    height: 25px;
+    margin: 5px 0px;
+    border: solid 1px rgb(20, 190, 190);
+    border-radius: 5px;
+}
+
+.buttons{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 5px;
+    border : none;
+    background-color: aqua;
+    box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 20px;
+}
+
+.buttons button:hover{
+    background-color: aqua;
+    border : solid 2px rgb(12, 206, 206);
+    padding: 8px;
+}
