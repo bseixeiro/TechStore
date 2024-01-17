@@ -1,0 +1,24 @@
+{
+  "name": "techstore",
+  "version": "1.0.0",
+  "description": "tp groupe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxYvesMastrodicasa/TechStore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxYvesMastrodicasa/TechStore/issues"
+  },
+  "homepage": "https://github.com/MaxYvesMastrodicasa/TechStore#readme"
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
