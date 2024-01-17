@@ -107,6 +107,22 @@ De plus nous avons essayer de ne pas déployer toutes les fonctionnalités simul
 
 Et enfin une communication transparente permet à chacun de comprendre ce qui a été modifié et de signaler rapidement s'il y a un problème. 
 
+#### Phase 7: Rétrospective et Documentation
+
+**Questions :**
+
+- Quelles sont les principales différences entre la première et la seconde version du site ?
+
+(A REMPLIR)
+
+- Quels sont les principaux enseignements tirés de ce projet ?
+
+L'importante de la communication au sein de l'équipe notamment lors des revues de code. De plus une planification réaliste est essentielle pour éviter des retards inattendus. 
+
+- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?
+
+Etant donné que nous étions un groupe de cinq personnes, pour mener à bien la réalisation de notre projet, nous aurions dû désigner un chef de projet qui aurait eu pour mission la repartions des différentes tâches et également de s’assurer de la cohésion du groupe entre tous les membres de notre équipe, ce qui nous aurait assuré un meilleur rythme de travail. 
+
 #### Phase 4: Préparation de la Release
 
 **Questions :**
