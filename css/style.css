@@ -188,16 +188,25 @@ input[type=button]:hover {
 }
 
 /*---------------------end-------------------*/
-/*--------------------Products----------------*/
+
+/*----------------Products & Products Lists Pages---------------------*/
 .products_title{
+    background-color: white;
     text-align: center;
+    border: solid 3px #45A29E;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 .products h3{
+    font-size: 2em;
     margin: 0;
 }
 
 .products {
+    background: radial-gradient(#c5c6c7, #45A29E);
     margin-left: 15vw;
     margin-right: 15vw;
     padding-left: 1vw;
@@ -209,15 +218,20 @@ input[type=button]:hover {
 }
  
 
-.test{
+.cards{
+    background-color: white;
     text-align: center;
     border: solid 3px #45A29E;
     display: flex;
     flex-direction: column;
-    
 }
 
-.cards{
+.cards:hover{
+   transition: 500ms;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card_lines{
     margin-top: 5vh;
     display: flex;
     flex-direction: row;
@@ -239,11 +253,11 @@ input[type=button]:hover {
     margin-bottom: 1vh;
     width : 20vw;
     height: 20vh;
-    padding-bottom: 180px;
+    padding-bottom: 23vh;
     border-bottom: solid 3px #45A29E;
 }
 
-.img {
+.products .img {
     width: 100%;
     height: auto;
 }
@@ -253,6 +267,67 @@ input[type=button]:hover {
     margin-bottom: 1vh;
     max-width : 20vw;
     max-height: 30vh;
+}
+
+.product_button{
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #45A29E;
+    border: 1px solid #0B0C10;
+    border-radius: 8px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 5%;
+    text-decoration: none;
+}
+
+.products a{
+    color : black;
+    text-decoration: none;
+}
+
+.product_list_background{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: solid 3px #45A29E;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+}
+
+.product_list{
+    border: solid 3px #45A29E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.product_name {
+    margin-left: 1vw;
+    padding-right: 1vw;
+    border-right: solid 3px #45A29E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_picture {
+    text-align: center;
+    margin-right: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-right: solid 3px #45A29E;
+    max-width : 20vw;
+    max-height: 40vh;
+}
+
+.product_description{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 /* ------------------------------------------------------------------------------------*/
