@@ -116,6 +116,8 @@ Et enfin une communication transparente permet à chacun de comprendre ce qui a 
 
 #### Phase 5: Mise en Production et Maintenance
 
+Site v 0.1.0 accessible via le lien : https://maxyvesmastrodicasa.github.io
+
 **Tâches :**
 
 1. Mergez la branche `release` dans `main` et `develop`.
