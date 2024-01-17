@@ -272,8 +272,6 @@ input[type=button]:hover {
 
 /*---------------------------------/Footer/--------------------------------------------*/
 .piedpage {
-    position:absolute;
-    bottom: 0;
     background-color: #ddd;
     width: 100%;
     height: auto;
