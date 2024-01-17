@@ -59,7 +59,6 @@ nav a:hover {
     float: right;
 }
 
-<<<<<<< HEAD
 /*------------Page Information Pratique-------------*/
 .about_backgroud {
     display: flex;
@@ -168,7 +167,6 @@ input[type=button]:hover {
 }
 
 /*---------------------end-------------------*/
-=======
 .products_title{
     text-align: center;
 }
@@ -335,4 +333,3 @@ input[type=button]:hover {
     border : solid 2px rgb(12, 206, 206);
     padding: 8px;
 }
->>>>>>> 4a7e1a1860aa17b0b3fa8f4d3964b3f896c55216
