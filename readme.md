@@ -107,6 +107,52 @@ De plus nous avons essayer de ne pas déployer toutes les fonctionnalités simul
 
 Et enfin une communication transparente permet à chacun de comprendre ce qui a été modifié et de signaler rapidement s'il y a un problème. 
 
+#### Phase 4: Préparation de la Release
+
+1. 
+```sh
+$ git checkout develop
+$ git checkout -b release/<version>
+```
+Pour créer notre branche de release basé sur la branche de developpement
+
+**Questions**
+
+ - On a effectuer des test unitaires et des test de fontionnalité sur l'appli.
+ 
+ - On a trouvé quelques bugs comme la bar de naviguation qui était pas fonctionnel sur des plus petits écran. Pour les résoudre, on a ouvert une nouvelle issus avec un tag bug, on assigne un développeur dessus qui corrige les bugs de la release. Une fois tous les correctifs effectuer la release est prête pour être merge en main.
+
+#### Phase 5: Mise en Production et Maintenance
+
+1.
+```sh
+$ git checkout develop
+$ git merge release/<version>
+
+$ git checkout main
+$ git merge release/<version>
+```
+on se place sur la branche de developpement et on merge la branche de release et on effectue la même manip pour la branche de prod pour que toutes les branches soit aux même niveaux à la fin d'une version.
+
+**Questions**
+
+ - Si un bug apparait lors de la mise en production, on créé une branche de hotfix basé sur cette dernière version pour corriger le bug. En attendant que le correctif soit fais on reviens à la version précédante pour garder une version stable en production. Une fois les bug corriger on merge la branche hotfix sur la main.
+
+ ```sh
+ $ git checkout main
+ $ git branch hotfix
+ $ git revert main
+ $ git push
+
+ $ git checkout hotfix
+ $ git commit -m "correctif"
+ $ git push -u origin hotfix
+ $ git checkout main
+ $ git merge hotfix
+ $ git push
+ ``` 
+
+
 #### Phase 7: Rétrospective et Documentation
 
 **Questions :**
