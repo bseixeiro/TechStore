@@ -95,21 +95,13 @@ $ git chekout -b Feature/Product
 
 **Questions :**
 
-<<<<<<< Updated upstream
-*- Quels furent les défis rencontrés lors de la fusion des différentes fonctionnalités ?*
-=======
 - **Quels furent les défis rencontrés lors de la fusion des différentes fonctionnalités** ?
->>>>>>> Stashed changes
 
 Les modifications apportées par les différents membres de notre groupes ont créé plusieurs fois des conflits dans le code, nécessitant une résolution manuelle afin de garantir une cohérence avec nos travaux. 
 
 *- Comment avez-vous assuré que le site fonctionne de manière cohérente après les merges ?*
 
-<<<<<<< Updated upstream
-Pour s'assurer que le site web fonctionne correctement après les merges, les membres de l'équipe ont examiné les modifications apportées puis nous avons discuté des impacts potentiels et avons assuré que les nouvelles fonctionnalités ne compromettent pas la stabilité du site. 
-=======
 - **Comment avez-vous assuré que le site fonctionne de manière cohérente après les merges** ?
->>>>>>> Stashed changes
 
 De plus nous avons essayé de ne pas déployer toutes les fonctionnalités simultanément. Nous avons voulu aborder une approche de déploiement progressif c'est à dire de déployer les changements par étapes, en surveillant les performances et la stabilité de chaque étape. 
 
@@ -178,17 +170,11 @@ Pour mettre à jour le site nous avons juste besoin de copier le dépôt main de
 
 **Questions :**
 
-<<<<<<< Updated upstream
-*- Quelles sont les principales différences entre la première et la seconde version du site ?*
-=======
 -**Quelles sont les principales différences entre la première(v0.1) et la seconde version(1.0) du site** ?
->>>>>>> Stashed changes
 
 Nous avons ajoutés plusieurs nouvelles fonctionnalités dans la seconde version du site : 
 
-<<<<<<< Updated upstream
 *- Quels sont les principaux enseignements tirés de ce projet ?*
-=======
 Retravaille de la homepage
 
 Les bugs signalés dans la 0.1 ont été corrigées dans la version 1.0 
@@ -198,16 +184,10 @@ Refonte du code : Il y a eu des améliorations dans la qualité du code
 Redirection vers une nouvelle page 'informatic_pieces.html' lorsque l'on clique sur un produit de la page produit.
 
 - **Quels sont les principaux enseignements tirés de ce projet** ?
->>>>>>> Stashed changes
 
 Les principaux enseignements que nous avons pu tirer du projet sont :
 
-<<<<<<< Updated upstream
-- L'importance de la communication au sein de l'équipe notamment lors des revues de code. 
-- De plus une planification réaliste est essentielle pour éviter des retards inattendus. 
-=======
 - **Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs** ?
->>>>>>> Stashed changes
 
 *- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?*
 
