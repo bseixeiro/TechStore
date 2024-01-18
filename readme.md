@@ -151,8 +151,119 @@ On se place sur la branche de développement et on merge la branche de release e
  $ git merge hotfix
  $ git push
  ``` 
+#### Phase 6: Rétrospective et Documentation
+**Taches**
 
+1. Rédigez une documentation détaillée du processus de développement.
 
+  Processus de Développement
+  Introduction
+
+  Le processus de développement que nous avons adopté vise à assurer une collaboration efficace au sein de l'équipe de développement tout en maintenant une approche structurée et ordonnée. Cette documentation détaillera les étapes clés de notre processus, les rôles des membres de l'équipe, et les bonnes pratiques à suivre.
+
+  Branches de Développement
+
+  Nous avons créé une branche principale de développement appelée pre-prod. Cette branche est la base commune pour toutes les évolutions et corrections. Chaque développeur crée des branches individuelles à partir de pre-prod pour travailler sur des fonctionnalités ou des corrections spécifiques.
+  Workflow des Branches
+
+  Le cycle de travail suit généralement ces étapes :
+
+      Création d'une Branche de Fonctionnalité ou de Correction:
+          Chaque développeur crée une branche à partir de pre-prod pour travailler sur une fonctionnalité ou une correction particulière.
+          Exemple : git checkout -b feature/nom-de-la-fonctionnalite
+
+      Développement et Commits:
+          Les développeurs effectuent leurs modifications dans leurs branches respectives.
+          Les commits sont faits de manière régulière avec des messages descriptifs.
+
+      Pull-Request:
+          Une fois les modifications terminées, un développeur crée une Pull-Request (PR) pour fusionner sa branche avec pre-prod.
+          Les PR sont soumises, puis principalement validé par Benjamin ou Swan.
+
+      Examen et Validation:
+          Benjamin ou Swan examinent les PR, fournissent des commentaires si nécessaire, et valident les changements.
+
+      Fusion sur pre-prod:
+          Une fois la PR approuvée, la branche de fonctionnalité ou de correction est fusionnée avec pre-prod.
+
+      Notification de Mise à Jour:
+          Un message est envoyé sur le canal de discussion pour informer l'équipe que les modifications sont sur pre-prod.
+          Les membres sont encouragés à mettre à jour leur branche de travail en fusionnant pre-prod pour rester synchronisés.
+
+  Bonnes Pratiques
+
+      Messages de Commit:
+          Utilisez des messages de commit clairs et descriptifs pour faciliter la compréhension des modifications.
+
+      Mises à Jour Régulières:
+          Mettez à jour régulièrement votre branche de travail en fusionnant pre-prod pour éviter les conflits majeurs.
+
+      Communication Transparente:
+          Communiquez efficacement sur le canal dédié pour informer l'équipe des mises à jour sur pre-prod et des actions à entreprendre.
+
+  En suivant ce processus, nous maintenons un flux de travail collaboratif et assurons l'intégration continue des nouvelles fonctionnalités et corrections au sein de notre codebase.
+
+Questions et Taches 2: 
+- Effectuez une rétrospective de projet pour discuter des leçons apprises.
+- Quels sont les principaux enseignements tirés de ce projet ?
+- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?
+
+  Rétrospective de Projet
+
+  La rétrospective de projet offre une opportunité précieuse pour réfléchir sur notre expérience de travail, identifier les points forts et les domaines d'amélioration, et tirer des leçons pour les projets futurs. Voici un aperçu de notre rétrospective, basé sur les leçons apprises au cours de notre collaboration.
+  Points Positifs
+
+      Collaboration Efficace:
+          La communication ouverte et régulière a favorisé une collaboration fluide entre les membres de l'équipe.
+          L'utilisation de Pull-Requests a permis des revues de code approfondies, garantissant une qualité élevée du code intégré.
+
+      Processus de Développement Structuré:
+          La mise en place d'une branche de développement (pre-prod) a facilité la gestion des fonctionnalités et des corrections.
+          L'utilisation de branches individuelles pour chaque fonctionnalité a favorisé un développement parallèle sans conflits majeurs.
+
+      Responsabilité Assignée:
+          L'assignation claire des rôles, notamment pour la validation des Pull-Requests, a accéléré le processus de revue.
+
+      Gestion de Projet Agile:
+          L'approche itérative du développement a permis une adaptation rapide aux changements et aux nouvelles exigences.
+
+  Domaines d'Amélioration
+
+      Gestion des Dépendances:
+          Des problèmes ont parfois émergé en raison de dépendances non gérées de manière optimale.
+          Améliorer la gestion des dépendances et la communication autour des mises à jour.
+
+      Documentation du Code:
+          Renforcer l'effort de documentation du code pour garantir une compréhension continue du système.
+
+      Tests Automatisés:
+          Augmenter la couverture des tests automatisés pour assurer une stabilité à long terme.
+
+      Formation Continue:
+          Mettre en place des sessions de formation régulières pour partager les connaissances et les meilleures pratiques au sein de l'équipe.
+
+      Gestion des Conflits:
+          Améliorer la gestion des conflits lors des fusions pour éviter des retards potentiels.
+
+  Leçons Apprises
+
+      Communication Transparente:
+          La communication est la clé. Encourager un partage ouvert d'informations et de défis rencontrés.
+
+      Agilité et Adaptabilité:
+          Être prêt à s'adapter rapidement aux changements de priorités et aux nouvelles exigences.
+
+      Investissement dans la Qualité:
+          La qualité du code et des processus est un investissement à long terme. Prioriser la qualité sur la vitesse.
+
+      Apprentissage Continu:
+          Encourager une culture d'apprentissage continu pour rester au courant des technologies et des meilleures pratiques.
+
+      Feedback Constructif:
+          Le feedback régulier et constructif favorise l'amélioration continue. Encourager l'échange honnête et respectueux de commentaires.
+
+      Cette rétrospective vise à renforcer notre compréhension collective des réussites et des opportunités d'amélioration. En mettant en œuvre ces leçons apprises, nous nous positionnons pour des projets futurs plus efficaces et collaboratifs.
+    
 Pour publier le site, nous utilisons github pages. Le dépôt doit être unique pour l'URL et nous avons décidé d'utiliser un de nos compte pour le mettre en ligne. 
 
 Nous avons créé un dépôt public et l'avons nommé "maxyvesmastrodicasa.github.io", conformémment à la doc de github pages.
