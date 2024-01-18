@@ -132,12 +132,8 @@ Etant donné que nous étions un groupe de cinq personnes, pour mener à bien la
 
 #### Phase 5: Mise en Production et Maintenance
 
+Pour la mise en production, nous avons utilisé github pages, pour cela nous avons essayé de modifier le nom 
 Site v 0.1.0 accessible via le lien : https://maxyvesmastrodicasa.github.io
-
-**Tâches :**
-
-1. Mergez la branche `release` dans `main` et `develop`.
-2. En cas de bugs, créez et gérez des branches `hotfix`.
 
 **Questions :**
 
