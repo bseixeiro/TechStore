@@ -10,7 +10,7 @@ $ git remote add origin git@github.com:bseixeiro/TechStore.git
 $ git clone git@github.com:bseixeiro/TechStore.git
 ```
 
-On rajoute le readme.md :
+On rajoute le `readme.md` :
 ```sh
 $ touch readme.md
 ```
@@ -21,7 +21,7 @@ $ git add .
 $ git commit -m "init : readme.md added"
 ```
 
-Puis on le push sur le repos en github :
+Puis on le push sur le dépôt en github :
 ```sh
 $ git push -u origin main
 ```
@@ -29,7 +29,7 @@ et on lui met un tag de v0:
 ```sh
 $ git tag -a v0.0 -m "Initialisation du projet" 
 ```
-On crée une branche de développement (develop), on bascule dessus, on commit les changements et on le push dans le repos github :
+On crée une branche de développement `develop`, on bascule dessus, on commit les changements et on le push dans le dépôt github :
 
 ```sh
 $ git checkout -b develop
@@ -40,9 +40,9 @@ $ git commit -m "readme.md updated"
 $ git push -u origin develop
 ```
 
-Petit problème lors de ce push, un merge de la branche de dev a été fait sur la main. On a donc dû resynchroniser les deux branches avant de continuer.
+Petit problème lors de ce push, un merge de la branche `develop` a été fait sur la branche `main`. On a donc dû resynchroniser les deux branches avant de continuer.
 
-Pour que tout le monde ai un accès à la branche de développement, on doit récupérer les branches du repos principales:
+Pour que tout le monde puisse avoir un accès à la branche de développement, on doit récupérer les branches du dépôt principal :
 
 ```sh
 $ git remote add upstream git@github.com:bseixeiro/TechStore.git
@@ -52,7 +52,8 @@ $ git pull upstream develop
 
 **Questions :**
 
- - Pour l'organisation des branches, nous allons suivre la méthode de Git Flow, notre branche main correspond aux versions de prod de notre site, la branche develop de référence dans l'avancement du projet, c'est ici que l'on ajoute les features une fois terminées. Pour chaque feature on crée une nouvelle branche pour pouvoir travailler en parallèle et une fois fini on merge sur la develop. Avant de merge la branche develop sur la main on fait une branche release/(version), où l'on effectue les phases de test et correction de bug pour la version.Si jamais il y a un problème en prod on crée une branche hotfix basée sur la main où l'on fait les corrections nécessaires avant de remerge sur la main.
+ - Pour l'organisation des branches, nous allons suivre la méthode de Git Flow.
+ Notre branche main correspond aux versions de prod de notre site et la branche develop de référence dans l'avancement du projet, c'est ici que l'on ajoute les features une fois terminées. Pour chaque feature on crée une nouvelle branche pour pouvoir travailler en parallèle et une fois fini on merge sur la develop. Avant de merge la branche develop sur la main on fait une branche release/(version), où l'on effectue les phases de test et de correction les bugs de la version. Si jamais il y a un problème en prod, on crée une branche hotfix basée sur la main où l'on fait les corrections nécessaires avant de remerge sur la main.
 
 *src => https://www.atlassian.com/fr/git/tutorials/comparing-workflows/gitflow-workflow*
 
@@ -94,16 +95,15 @@ $ git chekout -b Feature/Product
 
 **Questions :**
 
-- Quels furent les défis rencontrés lors de la fusion des différentes fonctionnalités ?
+*- Quels furent les défis rencontrés lors de la fusion des différentes fonctionnalités ?*
 
 Les modifications apportées par les différents membres de notre groupes ont créé plusieurs fois des conflits dans le code, nécessitant une résolution manuelle afin de garantir une cohérence avec nos travaux. 
 
+*- Comment avez-vous assuré que le site fonctionne de manière cohérente après les merges ?*
 
-- Comment avez-vous assuré que le site fonctionne de manière cohérente après les merges ?
+Pour s'assurer que le site web fonctionne correctement après les merges, les membres de l'équipe ont examiné les modifications apportées puis nous avons discuté des impacts potentiels et avons assuré que les nouvelles fonctionnalités ne compromettent pas la stabilité du site. 
 
-Pour s'assurer que le site web fonctionne correctement après les merges, les membres de l'équipe ont examiné les modifications apportées puis nous avons discuté des impacts potentiels et avons assurer que les nouvelles fonctionnalités ne compromettent pas la stabilité du site. 
-
-De plus nous avons essayer de ne pas déployer toutes les fonctionnalités simultanément. Nous avons voulu aborder une approche de déploiement progressif c'est à dire de déployer les changements par étapes, en surveillant les performances et la stabilité de chaque étape. 
+De plus nous avons essayé de ne pas déployer toutes les fonctionnalités simultanément. Nous avons voulu aborder une approche de déploiement progressif c'est à dire de déployer les changements par étapes, en surveillant les performances et la stabilité de chaque étape. 
 
 Et enfin une communication transparente permet à chacun de comprendre ce qui a été modifié et de signaler rapidement s'il y a un problème. 
 
@@ -114,13 +114,13 @@ Et enfin une communication transparente permet à chacun de comprendre ce qui a 
 $ git checkout develop
 $ git checkout -b release/<version>
 ```
-Pour créer notre branche de release basé sur la branche de developpement
+Pour créer notre branche de release basée sur la branche de développement
 
 **Questions**
 
- - On a effectuer des test unitaires et des test de fontionnalité sur l'appli.
+ - On a effectué des tests unitaires et des tests de fontionnalité sur l'appli.
  
- - On a trouvé quelques bugs comme la bar de naviguation qui était pas fonctionnel sur des plus petits écran. Pour les résoudre, on a ouvert une nouvelle issus avec un tag bug, on assigne un développeur dessus qui corrige les bugs de la release. Une fois tous les correctifs effectuer la release est prête pour être merge en main.
+ - Nous avons rencontré quelques bugs comme la bar de naviguation qui n'était pas fonctionnelle sur des écrans plus petits. Pour les résoudre, on a ouvert une nouvelle issue avec un tag bug, on assigne un développeur dessus qui corrige les bugs de la `release`. Une fois tout les correctifs effectués la `release` est prête pour être merge en `main`.
 
 #### Phase 5: Mise en Production et Maintenance
 
@@ -132,11 +132,11 @@ $ git merge release/<version>
 $ git checkout main
 $ git merge release/<version>
 ```
-on se place sur la branche de developpement et on merge la branche de release et on effectue la même manip pour la branche de prod pour que toutes les branches soit aux même niveaux à la fin d'une version.
+On se place sur la branche de développement et on merge la branche de release et on effectue la même manipulation pour la branche de prod pour que toutes les branches soient aux même niveaux à la fin d'une version.
 
 **Questions**
 
- - Si un bug apparait lors de la mise en production, on créé une branche de hotfix basé sur cette dernière version pour corriger le bug. En attendant que le correctif soit fais on reviens à la version précédante pour garder une version stable en production. Une fois les bug corriger on merge la branche hotfix sur la main.
+ - Si un bug apparait lors de la mise en production, on créé une branche de `hotfix` basé sur cette dernière version pour corriger le bug. En attendant que le correctif soit réalisé, on revient sur la version précédante pour garder une version stable en production. Une fois les bugs corrigés, on merge la branche `hotfix` sur la `main`.
 
  ```sh
  $ git checkout main
@@ -264,27 +264,47 @@ Questions et Taches 2:
 
       Cette rétrospective vise à renforcer notre compréhension collective des réussites et des opportunités d'amélioration. En mettant en œuvre ces leçons apprises, nous nous positionnons pour des projets futurs plus efficaces et collaboratifs.
     
+Pour publier le site, nous utilisons github pages. Le dépôt doit être unique pour l'URL et nous avons décidé d'utiliser un de nos compte pour le mettre en ligne. 
+
+Nous avons créé un dépôt public et l'avons nommé "maxyvesmastrodicasa.github.io", conformémment à la doc de github pages.
+Vous avez accès à ce site via l'adresse suivante :
+```
+https://maxyvesmastrodicasa.github.io/
+```
+
+Github pages a besoin d'un page index.html à la racine du dépôt, nous avons donc créé cette page qui redirige directement dans le dossiers html de notre projet, sur la "vrai" page index. 
+Pour mettre à jour le site nous avons juste besoin de copier le dépôt main de notre production sur le dépôt public 
+
+
+
 #### Phase 7: Rétrospective et Documentation
 
 **Questions :**
 
-- Quelles sont les principales différences entre la première et la seconde version du site ?
+*- Quelles sont les principales différences entre la première et la seconde version du site ?*
 
 (A REMPLIR)
 
-- Quels sont les principaux enseignements tirés de ce projet ?
+*- Quels sont les principaux enseignements tirés de ce projet ?*
 
-L'importante de la communication au sein de l'équipe notamment lors des revues de code. De plus une planification réaliste est essentielle pour éviter des retards inattendus. 
+Les principaux enseignements que nous avons pu tirer du projet sont :
 
-- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?
+- L'importance de la communication au sein de l'équipe notamment lors des revues de code. 
+- De plus une planification réaliste est essentielle pour éviter des retards inattendus. 
 
-Etant donné que nous étions un groupe de cinq personnes, pour mener à bien la réalisation de notre projet, nous aurions dû désigner un chef de projet qui aurait eu pour mission la repartions des différentes tâches et également de s’assurer de la cohésion du groupe entre tous les membres de notre équipe, ce qui nous aurait assuré un meilleur rythme de travail. 
+*- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?*
 
-#### Conventions de nos commit:
-  Les commits jouent un rôle essentiel dans la gestion de versions de notre projet, en fournissant une traçabilité claire des changements effectués au fil du temps. Afin de maintenir une cohérence dans nos messages de commits, nous adoptons une convention standard pour les préfixes et le format global.
-  Préfixes:
+Etant donné que nous étions un groupe de cinq personnes, pour mener à bien la réalisation de notre projet, nous aurions dû désigner un chef de projet qui aurait eu pour missions :
+
+- Des répartions des différentes tâches
+- S’assurer de la cohésion du groupe entre tout les membres de notre équipe, ce qui nous aurait assuré un meilleur rythme de travail. 
+
+#### Conventions de nos commits :
+  
+Les commits jouent un rôle essentiel dans la gestion de versions de notre projet, en fournissant une traçabilité claire des changements effectués au fil du temps. Afin de maintenir une cohérence dans nos messages de commits, nous adoptons une convention standard pour les préfixes et le format global.
+Préfixes:
     FIX:
-      Les commits avec le préfixe fix sont utilisés pour corriger des bogues identifiés dans le code. Ces commits sont en corrélation avec les mises à jour de type PATCH dans la gestion sémantique de versions.
+      Les commits avec le préfixe fix sont utilisés pour corriger des bugs identifiés dans le code. Ces commits sont en corrélation avec les mises à jour de type PATCH dans la gestion sémantique de versions.
 
     Exemple:
       "fix: resolve issue with user authentication"
@@ -304,5 +324,5 @@ Etant donné que nous étions un groupe de cinq personnes, pour mener à bien la
   Exemples:
     Pour l'ajout d'une nouvelle fonctionnalité :
       "feat: implement search functionality"
-    Pour la correction d'un bugue :
+    Pour la correction d'un bug :
       "fix: resolve issue with date formatting"
