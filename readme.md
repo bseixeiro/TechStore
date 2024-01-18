@@ -152,6 +152,20 @@ On se place sur la branche de développement et on merge la branche de release e
  $ git push
  ``` 
 
+
+Pour publier le site, nous utilisons github pages. Le dépôt doit être unique pour l'URL et nous avons décidé d'utiliser un de nos compte pour le mettre en ligne. 
+
+Nous avons créé un dépôt public et l'avons nommé "maxyvesmastrodicasa.github.io", conformémment à la doc de github pages.
+Vous avez accès à ce site via l'adresse suivante :
+```
+https://maxyvesmastrodicasa.github.io/
+```
+
+Github pages a besoin d'un page index.html à la racine du dépôt, nous avons donc créé cette page qui redirige directement dans le dossiers html de notre projet, sur la "vrai" page index. 
+Pour mettre à jour le site nous avons juste besoin de copier le dépôt main de notre production sur le dépôt public 
+
+
+
 #### Phase 7: Rétrospective et Documentation
 
 **Questions :**
