@@ -153,6 +153,19 @@ on se place sur la branche de developpement et on merge la branche de release et
  ``` 
 
 
+Pour publier le site, nous utilisons github pages. Le dépôt doit être unique pour l'URL et nous avons décidé d'utiliser un de nos compte pour le mettre en ligne. 
+
+Nous avons créé un dépôt public et l'avons nommé "maxyvesmastrodicasa.github.io", conformémment à la doc de github pages.
+Vous avez accès à ce site via l'adresse suivante :
+```
+https://maxyvesmastrodicasa.github.io/
+```
+
+Github pages a besoin d'un page index.html à la racine du dépôt, nous avons donc créé cette page qui redirige directement dans le dossiers html de notre projet, sur la "vrai" page index. 
+Pour mettre à jour le site nous avons juste besoin de copier le dépôt main de notre production sur le dépôt public 
+
+
+
 #### Phase 7: Rétrospective et Documentation
 
 **Questions :**
@@ -173,7 +186,7 @@ Etant donné que nous étions un groupe de cinq personnes, pour mener à bien la
   Les commits jouent un rôle essentiel dans la gestion de versions de notre projet, en fournissant une traçabilité claire des changements effectués au fil du temps. Afin de maintenir une cohérence dans nos messages de commits, nous adoptons une convention standard pour les préfixes et le format global.
   Préfixes:
     FIX:
-      Les commits avec le préfixe fix sont utilisés pour corriger des bogues identifiés dans le code. Ces commits sont en corrélation avec les mises à jour de type PATCH dans la gestion sémantique de versions.
+      Les commits avec le préfixe fix sont utilisés pour corriger des bugs identifiés dans le code. Ces commits sont en corrélation avec les mises à jour de type PATCH dans la gestion sémantique de versions.
 
     Exemple:
       "fix: resolve issue with user authentication"
