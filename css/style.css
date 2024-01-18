@@ -78,6 +78,31 @@ nav a:hover {
     height: 100%;
 }
 
+/*------------Page Index-------------*/
+.imgIndex {
+    width: 100%; 
+    height: 25vmax;
+}
+.imgLogo {
+    width: 10vi; 
+    height: 10vi;
+    position: relative;
+    display: flex;
+}
+.main-mark {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+
+}
+.title-mark h2 {
+    margin-bottom: 50%;
+}
+
 /*------------Page Information Pratique-------------*/
 .about_backgroud {
     display: flex;
