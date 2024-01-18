@@ -123,8 +123,37 @@ L'importante de la communication au sein de l'équipe notamment lors des revues 
 
 Etant donné que nous étions un groupe de cinq personnes, pour mener à bien la réalisation de notre projet, nous aurions dû désigner un chef de projet qui aurait eu pour mission la repartions des différentes tâches et également de s’assurer de la cohésion du groupe entre tous les membres de notre équipe, ce qui nous aurait assuré un meilleur rythme de travail. 
 
- 
+#### Phase 4: Préparation de la Release
 
+**Questions :**
+
+- Quels types de tests avez-vous effectués avant la mise en production ?
+- Avez-vous rencontré des problèmes pendant cette phase et comment les avez-vous résolus ?
+
+#### Phase 5: Mise en Production et Maintenance
+
+Pour la mise en production, nous avons utilisé github pages, pour cela nous avons essayé de modifier le nom 
+Site v 0.1.0 accessible via le lien : https://maxyvesmastrodicasa.github.io
+
+**Questions :**
+
+- Comment gérez-vous les retours et les bugs après la mise en production ?
+- Quelles stratégies adoptez-vous pour la maintenance continue du site ?
+
+#### Phase 6: Rétrospective et Documentation
+
+**Questions :**
+
+- Quels sont les principaux enseignements tirés de ce projet ?
+- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?
+
+#### Phase 7: Rétrospective et Documentation
+
+**Questions :**
+
+- Quelles sont les principales différences entre la première et la seconde version du site ?
+- Quels sont les principaux enseignements tirés de ce projet ?
+- Comment pourriez-vous améliorer vos pratiques de collaboration et de versioning pour des projets futurs ?
 
 #### Conventions de nos commit:
   Les commits jouent un rôle essentiel dans la gestion de versions de notre projet, en fournissant une traçabilité claire des changements effectués au fil du temps. Afin de maintenir une cohérence dans nos messages de commits, nous adoptons une convention standard pour les préfixes et le format global.
