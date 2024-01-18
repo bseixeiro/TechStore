@@ -107,6 +107,8 @@ De plus nous avons essayer de ne pas déployer toutes les fonctionnalités simul
 
 Et enfin une communication transparente permet à chacun de comprendre ce qui a été modifié et de signaler rapidement s'il y a un problème. 
 
+
+
 #### Phase 7: Rétrospective et Documentation
 
 **Questions :**
